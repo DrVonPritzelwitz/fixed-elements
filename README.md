@@ -1,4 +1,4 @@
-# Assignment - Implement fixed header page
+# Assignment - Implement fixed header
 
 ## Description
 

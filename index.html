@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main-style.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Title bar</h1>
+	</div>
+
+	<div class="row">
+
+		<div class="col-9">
+			<h1>Epic list of epic items</h1>
+			<ul id="epicList"></ul>
+		</div>
+
+		<div class="col-3">
+			<div class="important-box">
+				<h2>Important Info</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+					egestas odio, vitae scelerisque enim ligula venenatis dolor.
+					Maecenas nisl est, ultrices nec congue eget, auctor vitae
+					massa. Fusce luctus vestibulum augue ut aliquet.
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<p>some copyright info.</p>
+	</div>
+
+	<script>
+		// Get the unOrdered-List with the id: epicList
+		var ul = document.getElementById('epicList');
+
+		// Add 20 list elements to the epicList
+		for(var i = 1; i < 20; i++ ) {
+			ul.innerHTML += `<li>
+								<h3>Epic list item ${i}</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							</li>`;
+		}
+	</script>
+</body>
+
+</html>
